@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+
 import { TodoItemComponent } from '../todo-item/todo-item.component';
 import { TodoGroup } from '../../domain/todo-group';
 

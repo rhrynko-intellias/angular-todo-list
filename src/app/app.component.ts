@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { TodoGroupComponent } from './components/todo-group/todo-group.component';
 import { TodoGroup, TodoStatus } from './domain/todo-group';
@@ -7,7 +8,7 @@ import { TodoGroup, TodoStatus } from './domain/todo-group';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TodoGroupComponent],
+  imports: [CommonModule, RouterOutlet, TodoGroupComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -21,16 +22,6 @@ export class AppComponent {
         items: [
           {
             title: 'Todo Item 1',
-            status: TodoStatus.Todo,
-            description: 'This is a description for Todo Item 1',
-          },
-          {
-            title: 'Todo Item 2',
-            status: TodoStatus.Todo,
-            description: 'This is a description for Todo Item 1',
-          },
-          {
-            title: 'Todo Item 3',
             status: TodoStatus.Todo,
             description: 'This is a description for Todo Item 1',
           },
