@@ -4,5 +4,9 @@
 </header>
 
 <main>
-  <app-todo-group></app-todo-group>
+  <app-todo-group
+    [index]="i"
+    [todoGroup]="group"
+    *ngFor="let group of todoGroup; let i = index"
+  ></app-todo-group>
 </main>

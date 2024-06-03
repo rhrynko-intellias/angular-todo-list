@@ -1,1 +1,6 @@
-<p>todo-group works!</p>
+<h2>{{ todoGroup.title }}</h2>
+<app-todo-item
+  [todoItem]="item"
+  [index]="i"
+  *ngFor="let item of todoGroup.items; let i = index"
+></app-todo-item>
