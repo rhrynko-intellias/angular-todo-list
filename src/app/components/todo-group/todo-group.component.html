@@ -2,8 +2,11 @@
 
 <ng-container *ngFor="let item of todoGroup.items">
   <ng-container [ngSwitch]="item.status">
-    <app-item-todo *ngSwitchCase="'todo'"></app-item-todo>
-    <app-item-in-progress *ngSwitchCase="'inProgress'"></app-item-in-progress>
-    <app-item-done *ngSwitchCase="'done'"></app-item-done>
+    <app-item-todo [todoItem]="item" *ngSwitchCase="'todo'"></app-item-todo>
+    <app-item-in-progress
+      [todoItem]="item"
+      *ngSwitchCase="'inProgress'"
+    ></app-item-in-progress>
+    <app-item-done [todoItem]="item" *ngSwitchCase="'done'"></app-item-done>
   </ng-container>
 </ng-container>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { TodoItemBaseComponent } from '../todo-item.base.component';
 import { CommonModule } from '@angular/common';
+
+import { TodoItemBaseComponent } from '../todo-item.base.component';
 
 @Component({
   selector: 'app-item-done',
